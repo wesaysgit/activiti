@@ -60,10 +60,6 @@
             <version>1.2.8</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>2.0.51</version>
@@ -73,17 +69,22 @@
             <groupId>org.activiti</groupId>
             <artifactId>activiti-spring-boot-starter</artifactId>
             <version>${activiti.version}</version>
-
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.activiti.dependencies</groupId>
             <artifactId>activiti-dependencies</artifactId>
             <version>${activiti.version}</version>
             <type>pom</type>
         </dependency>
 
-        <!-- 生成流程图 -->
+        &lt;!&ndash; 生成流程图 &ndash;&gt;
         <dependency>
             <groupId>org.activiti</groupId>
             <artifactId>activiti-image-generator</artifactId>
@@ -94,7 +95,7 @@
             <groupId>org.activiti</groupId>
             <artifactId>activiti-process-validation</artifactId>
             <version>${activiti.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

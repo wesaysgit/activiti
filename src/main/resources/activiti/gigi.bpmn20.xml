@@ -10,7 +10,7 @@
     <userTask id="sid-9e8ecf62-c577-4ecb-8d99-57acc80b6ce6" name="开发经理审批"/>
     <userTask id="sid-4c3b887d-260a-4b3d-b63a-6d99d028dcbf" name="项目经理审核"/>
     <sequenceFlow id="sid-8e103b9b-6c1d-43f8-b873-a8a5c300fbce" sourceRef="sid-ca3e9278-44e5-4c3f-8fd5-22831046ee40" targetRef="sid-4f9ea72c-a807-4df7-914d-c63006be233f"/>
-    <exclusiveGateway id="sid-ee30c0e0-dfd9-4069-b192-b4cd90574262" />
+    <exclusiveGateway id="sid-ee30c0e0-dfd9-4069-b192-b4cd90574262"/>
     <sequenceFlow id="sid-a5a1917b-198e-4927-bd7d-bf4ee7a193f4" sourceRef="sid-4f9ea72c-a807-4df7-914d-c63006be233f" targetRef="sid-ee30c0e0-dfd9-4069-b192-b4cd90574262"/>
     <sequenceFlow id="sid-3efc6549-b7f9-4f2c-bb49-e11bdfebc01a" sourceRef="sid-ee30c0e0-dfd9-4069-b192-b4cd90574262" targetRef="sid-ca3e9278-44e5-4c3f-8fd5-22831046ee40" name="驳回">
       <conditionExpression xsi:type="tFormalExpression"/>
@@ -19,9 +19,6 @@
     <sequenceFlow id="sid-5463a71f-facb-4b61-ab2b-57779735dee2" sourceRef="sid-9e8ecf62-c577-4ecb-8d99-57acc80b6ce6" targetRef="sid-0d236c01-ca5f-4a51-a067-52d83d7773b2"/>
     <sequenceFlow id="sid-08f045fa-b63a-47b1-85c2-8899ec6e8039" sourceRef="sid-0d236c01-ca5f-4a51-a067-52d83d7773b2" targetRef="sid-4c3b887d-260a-4b3d-b63a-6d99d028dcbf" name="同意">
       <conditionExpression xsi:type="tFormalExpression"/>
-      <extensionElements>
-        <activiti:executionListener class="Class 1"/>
-      </extensionElements>
     </sequenceFlow>
     <sequenceFlow id="sid-f8ac9ead-b863-4931-b983-1a9393bee677" sourceRef="sid-0d236c01-ca5f-4a51-a067-52d83d7773b2" targetRef="sid-ca3e9278-44e5-4c3f-8fd5-22831046ee40" name="驳回">
       <conditionExpression xsi:type="tFormalExpression"/>
